@@ -51,7 +51,7 @@ pipeline {
           steps{
              
                 sshagent(['ansible-ssh']) {
-                     ansiblePlaybook disableHostKeyChecking: true,  inventory: 'stage.inv', playbook: 'tomcat.yml'
+                     ansiblePlaybook disableHostKeyChecking: true,  inventory: 'prod.inv', playbook: 'tomcat.yml'
               }
 
           }
