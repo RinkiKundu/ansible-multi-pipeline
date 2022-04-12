@@ -39,7 +39,7 @@ pipeline {
 
           steps{
              
-                git "https://github.com/RinkiKundu/tomcatPlaybook.git"
+                git "https://github.com/RinkiKundu/ansible-multi-pipeline.git"
           }
        }
         stage('execute ansible') {
